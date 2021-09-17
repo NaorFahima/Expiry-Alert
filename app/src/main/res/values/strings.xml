@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Expiry Alert</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- RegisterActivity -->
+    <string name="signup_headline">Sign Up</string>
+    <string name="name_textbox">Full Name</string>
+    <string name="email_textbox">Email (Valid one)</string>
+    <string name="password_textbox">Password</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="already_have_user">Already have an account?</string>
+    <string name="goto_login_button">Login</string>
+
+
+    <!-- LoginActivity -->
+    <string name="login_headline">Login</string>
+    <string name="login_email_textbox">Email</string>
+    <string name="login_password_textbox">Password</string>
+    <string name="dont_have_user">Don\'t have account yet?</string>
+    <string name="create_user_button">Create User</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login_button">Login</string>
+
+    <!-- MainFragment -->
+    <string name="welcome_headline">Welcome!</string>
+    <string name="item_quantity">Quantity: </string>
+    <string name="add_category_button">Add category</string>
+    <string name="item_expires_in">Expires in <![CDATA[<b><font color=%2$s>%1$d</font></b>]]> Days</string>
+    <string name="item_expired">Item <![CDATA[<b><font color=%2$s>EXPIRED</font></b>]]></string>
+    <string name="item_in_category_header">Items </string>
+    <string name="verify_email_text">Please verify your Email to use this app</string>
+    <string name="verify_email_text2">After you verify your email please swipe down to refresh</string>
+    <string name="verify_email_button">Verify</string>
+
+    <!-- Notification -->
+    <string name="notification_item_expires_in">Item will expire in <![CDATA[<b><font color=%2$s>%1$d</font></b>]]> Days</string>
+    <string name="notification_item_expired">Item <![CDATA[<b><font color=%2$s>EXPIRED</font></b>]]></string>
+
+
+    <!-- Add category popup -->
+    <string name="add_category_alert_head">Add Category</string>
+    <string name="edit_category_alert_head">Edit Category: %1$s</string>
+    <string name="add_category_edittext_hint">Category Name</string>
+
+    <!-- Add/Edit item popup -->
+    <string name="item_popup_headline">Add item to: %1$s</string>
+    <string name="item_edittext_name_hint">Item Name</string>
+    <string name="item_edittext_qty_hint">Qty:</string>
+    <string name="item_edittext_description_hint">Item Description</string>
+    <string name="item_edittext_expiry_date_text">Expiry Date:</string>
+    <string name="item_edittext_expiry_date_hint">MM/DD/YY</string>
+    <string name="item_edittext_expiry_reminder_hint">MM/DD/YY HH:ss</string>
+    <string name="item_edittext_expiry_reminder_text">Remind me at: </string>
+    <string name="item_edittext_expiry_repeat_text">Repeat:</string>
+    <string name="item_edittext_expiry_repeat_text_explain">(on the same time)</string>
+    <string name="item_edittext_expiry_is_sharing_text">Private?</string>
+
+    <string-array name="item_reminder_array">
+        <item>Same Day</item>
+        <item>Day Before</item>
+        <item>Week Before</item>
+        <item>Month Before</item>
+    </string-array>
+
+    <!-- Edit item popup -->
+    <string name="edit_item_popup_headline">Edit item in: </string>
+
+    <!-- Edit username popup -->
+    <string name="edit_username_alert_head">Edit Username: </string>
+    <string name="edit_username_edittext_hint">Username</string>
+
+
+    <!-- SettingsFragment -->
+    <string name="logout_button_text">Logout</string>
+    <string name="change_password_button_text">Change Password</string>
+    <string name="change_username_button_text">Change Username</string>
+    <string name="user_email">Email: </string>
+    <string name="user_token">User Token: </string>
+    <string name="user_sharing_list">Shared User List: </string>
+    <string name="user_sharing_list_empty">List is empty </string>
+    <string name="user_sharing_list_dialog_head">Add User By Token</string>
+    <string name="user_sharing_list_dialog_edittext_token">Insert User Token</string>
+    <string name="user_sharing_list_tooltip_text">Share your items with other users
+    by adding them to your user sharing list.\n
+    Just add a user by inserting his Token.\n
+    Once the user is in the list, every item you create which is <![CDATA[<b><font color=%1$s>NOT</font></b>]]> private
+    will be synced with the users in your list.\n
+    <![CDATA[<b><font color=%2$s>PAY ATTENTION:</font></b>]]> you won\'t see the items from the
+        users in your list, this is one way synchronizing</string>
+
+    <!-- AddUserToSharingList Dialog -->
+    <string name="confirm_delete_dialog_head">Sure you want to remove: </string>
+    <string name="confirm_delete_dialog_remove_btn">Remove</string>
+
+    <!-- Confirm Delete Dialog -->
+    <string name="confirm_delete_dialog_cancel_btn">Cancel</string>
+    <string name="change_password_dialog_head">Change your password</string>
+    <string name="change_password_old_dialog_head">Old Password</string>
+
+    <!-- Forgot Password Dialog -->
+    <string name="forgot_password_dialog_headline">Forgot Password?</string>
+    <string name="forgot_password_dialog_text">Reset your password</string>
+    <string name="forgot_password_dialog_email_edittext">Email</string>
+    <string name="forgot_password_dialog_btn_send">Send</string>
+
+    <!-- Change Password Dialog -->
+    <string name="change_password_new_dialog_head">New Password</string>
+    <string name="change_password_new_again_dialog_head">New Password (Again)</string>
+    <string name="change_password_dialog_save_btn">Remove</string>
+    <string name="change_password_dialog_cancel_btn">Cancel</string>
+
+    <!-- Item View Fragment -->
+    <string name="item_view_qty_text">Qty: </string>
+    <string name="item_view_expiry_date_text">Expires at: </string>
+    <string name="item_view_expiry_status">(<![CDATA[<b><font color=%2$s>%1$d</font></b>]]> Days left)</string>
+    <string name="item_view_expired_status">(<![CDATA[<b><font color=%2$s>EXPIRED</font></b>]]>)</string>
+    <string name="item_view_remind_at_text">Remind me at: </string>
+    <string name="item_view_is_private_text">This item is PRIVATE</string>
+    <string name="item_view_is_not_private_text">This item is SHARED</string>
+
+
+    <!-- Global -->
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+
+
+</resources>

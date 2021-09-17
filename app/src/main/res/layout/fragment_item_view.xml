@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemViewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/item_view_top"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/item_view_edit_button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/edit"
+                    android:layout_marginRight="20dp">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/item_view_delete_button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/close">
+                </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="40dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/item_view_shape">
+
+            <TextView
+                android:id="@+id/item_view_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="header"
+                android:textSize="22dp"
+                android:textColor="@color/logo_pink">
+            </TextView>
+
+            <TextView
+                android:id="@+id/item_view_item_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="category"
+                android:textSize="15dp"
+                android:textColor="@color/logo_gray_color">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_view_qty_text"
+                    android:textColor="@color/white">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/item_view_item_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="qty"
+                    android:textStyle="bold"
+                    android:textColor="@color/logo_pink"
+                    android:layout_marginLeft="5dp">
+                </TextView>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/item_view_item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_view_expiry_date_text"
+                    android:textColor="@color/white">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/item_view_item_expire_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expire Date"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/logo_pink">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_view_remind_at_text"
+                    android:textColor="@color/white">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/item_view_item_remind_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Time"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/logo_pink">
+                </TextView>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/item_view_item_isprivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is Private?"
+                android:textColor="@color/logo_pink"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

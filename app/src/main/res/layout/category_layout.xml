@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    card_view:cardBackgroundColor="@color/cards_pink"
+    card_view:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <LinearLayout
+                android:id="@+id/pparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/dropdown_button"
+                android:paddingLeft="10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/category_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/item_quantity_textview"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+
+                <LinearLayout
+                    android:id="@+id/edit_del_category_icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp">
+
+                    <ImageView
+                        android:id="@+id/edit_category_button"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/edit">
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/delete_category_button"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/close"
+                        android:layout_marginLeft="12dp">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--My dropdown Button -->
+            <RelativeLayout
+                android:id="@+id/dropdown_button"
+                android:layout_width="15dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:background="@drawable/dropdown_arrow_category" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--The layout below is my ExpandableLayout -->
+        <LinearLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/add_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/items_in_category_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_in_category_header"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/add_item_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/add"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

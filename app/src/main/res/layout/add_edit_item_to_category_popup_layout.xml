@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/round_rec_purple"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/add_item_dialog_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/item_popup_headline"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingRight="10dp">
+
+        <ScrollView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_name_edit"
+                android:hint="@string/item_edittext_name_hint"
+                android:maxLength="30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white">
+            </EditText>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_edittext_qty_hint"
+                android:textColor="@color/white"></TextView>
+            <EditText
+                android:id="@+id/quantity_edittext"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:maxLength="5"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="number"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_desc_edit"
+            android:hint="@string/item_edittext_description_hint"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:maxLength="150"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white">
+        </EditText>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=
+                "@string/item_edittext_expiry_date_text"
+            android:textColor="@color/white"></TextView>
+
+        <EditText
+            android:id="@+id/item_expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="6"
+            android:inputType="date"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/item_edittext_expiry_date_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_edittext_expiry_reminder_text"
+            android:textColor="@color/white"></TextView>
+
+
+        <EditText
+            android:id="@+id/add_item_reminder_expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="9"
+            android:inputType="datetime"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/item_edittext_expiry_reminder_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_edittext_expiry_is_sharing_text"
+            android:textColor="@color/white"></TextView>
+
+        <CheckBox android:id="@+id/checkbox_isPrivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="9dp">
+
+        <Button
+            android:id="@+id/add_item_btn_cancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_rec_pink"
+            android:clickable="true"
+            android:text="@string/btn_cancel"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/add_item_btn_save"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_rec_pink"
+            android:clickable="true"
+            android:text="@string/btn_save"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

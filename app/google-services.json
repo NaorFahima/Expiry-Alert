@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "22081950781",
+    "firebase_url": "https://expiry-alert-a034c-default-rtdb.firebaseio.com",
+    "project_id": "expiry-alert-a034c",
+    "storage_bucket": "expiry-alert-a034c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22081950781:android:6d84141b9637875a0e8654",
+        "android_client_info": {
+          "package_name": "com.afeka.expiryalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22081950781-qvjbk57sqt6lckn9hauto49me7gibjb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmD7TFoTswUEWlNlCx-QEbFGeWhVkrbCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22081950781-7pu7vj34akq63q02h8rvecjnu006kvql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
